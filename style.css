@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color:#fff;
+}
+
+/* ===== NAV ===== */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1.2rem 8%;
+    position:fixed;
+    width:100%;
+    top:0;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.4);
+    border-bottom:1px solid rgba(77,163,255,0.2);
+    z-index:1000;
+}
+
+.logo{
+    font-size:1.4rem;
+    font-weight:600;
+    color:#4da3ff;
+}
+
+.nav-links{
+    display:flex;
+    gap:2rem;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#cbd5f5;
+    font-weight:400;
+    font-size:0.95rem;
+    transition:0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:#4da3ff;
+}
+
+/* ===== SECTIONS ===== */
+section{
+    padding:6rem 8%;
+    min-height:100vh;
+}
+
+/* ===== HEADINGS ===== */
+h2{
+    text-align:center;
+    font-size:2.2rem;
+    font-weight:600;
+    margin-bottom:3rem;
+    background:linear-gradient(90deg,#4da3ff,#7b61ff);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+/* ===== HOME ===== */
+#home{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    height:100vh;
+    padding:0 20px;
+}
+
+/* Hello text */
+.home-content h3{
+    color:#94a3b8;
+    font-size:1rem;
+    font-weight:400;
+    margin-bottom:10px;
+}
+
+/* NAME (Balanced, not too bold) */
+.home-content h1{
+    font-size:4.2rem;
+    font-weight:600;
+    letter-spacing:2px;
+    margin:10px 0 15px;
+}
+
+/* Gradient surname */
+.home-content h1 span{
+    background:linear-gradient(90deg,#4da3ff,#7b61ff);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+/* Subtitle FIX (less spacing) */
+.home-content p{
+    font-size:0.9rem;
+    letter-spacing:3px; /* reduced from 5px */
+    color:#4da3ff;
+    margin-bottom:25px;
+}
+
+/* BUTTONS CLEAN */
+.btn{
+    padding:12px 28px;
+    border-radius:30px;
+    background:linear-gradient(45deg,#4da3ff,#7b61ff);
+    color:white;
+    text-decoration:none;
+    margin:8px;
+    font-size:0.95rem;
+    font-weight:500;
+    transition:0.3s;
+
+    /* 🔥 reduced glow */
+    box-shadow:0 0 6px rgba(77,163,255,0.25);
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 10px rgba(77,163,255,0.35);
+}
+
+/* Outline button */
+.btn-outline{
+    background:transparent;
+    border:1px solid #4da3ff;
+    box-shadow:none;
+}
+
+.btn-outline:hover{
+    background:rgba(77,163,255,0.1);
+}
+
+/* ===== ABOUT ===== */
+.about-content{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+}
+
+.about-content p{
+    margin:14px 0;
+    line-height:1.7;
+    color:#cbd5f5;
+}
+
+/* ===== SKILLS ===== */
+.skills-container{
+    display:flex;
+    justify-content:center;
+    gap:2rem;
+    flex-wrap:wrap;
+}
+
+.skill-category{
+    background:rgba(255,255,255,0.05);
+    padding:25px;
+    border-radius:20px;
+    border:1px solid rgba(77,163,255,0.2);
+    transition:0.3s;
+}
+
+.skill-category:hover{
+    transform:translateY(-5px);
+}
+
+.skill-category h3{
+    color:#4da3ff;
+}
+
+.skill-category li{
+    margin:10px 0;
+}
+
+/* ===== PROJECTS ===== */
+.projects-container{
+    display:flex;
+    gap:2rem;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+/* 🔥 FINAL CLEAN PROJECT CARD */
+.project-card{
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    width:320px;
+    border-radius:20px;
+    border:1px solid rgba(77,163,255,0.2);
+
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(77,163,255,0.3);
+}
+
+.project-icon{
+    font-size:1.8rem;
+    color:#4da3ff;
+}
+
+.project-card h3{
+    font-size:1.3rem;
+    font-weight:600;
+    line-height:1.4;
+}
+
+.project-card p{
+    font-size:0.95rem;
+    line-height:1.7;
+    color:#cbd5f5;
+}
+
+/* 🔥 CLEAN TECH STACK */
+.tech-stack{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.tech-stack span{
+    background:#1e293b;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+/* 🔥 CLEAN LINK */
+.project-link{
+    margin-top:10px;
+    color:#4da3ff;
+    text-decoration:none;
+}
+
+.project-link:hover{
+    text-decoration:underline;
+}
+
+/* ===== EDUCATION ===== */
+.education-item{
+    background:rgba(255,255,255,0.05);
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+/* ===== CONTACT ===== */
+.contact-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.contact-item{
+    background:rgba(255,255,255,0.05);
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.contact-item:hover{
+    box-shadow:0 0 20px rgba(77,163,255,0.3);
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:20px;
+    color:#94a3b8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .nav-links{
+        display:none;
+    }
+
+    .home-content h1{
+        font-size:2.5rem;
+    }
+}
